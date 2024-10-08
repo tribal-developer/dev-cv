@@ -186,13 +186,13 @@ footer p {
 /* mobile screen  */
 @media (max-width: 768px) {
   main {
-    height: 100%;
+    height: 100vh;
     width: 95%;
-    margin: 0 auto;
+    margin: auto;
   }
   .container{
     max-width: 90%;
-    /* height: fit-content; */
+    height: 100%;
     margin: 1rem 0;
     padding: 1rem 0;
     box-shadow: 0 1px 8px 0 rgba(56, 32, 118, 0.11), 0 1px 26px 0 rgba(28, 31, 90, 0.492);
