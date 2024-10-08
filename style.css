@@ -191,7 +191,7 @@ footer p {
     margin: 0 auto;
   }
   .container{
-    width: 100%;
+    max-width: 100%;
     height: fit-content;
     margin: 1rem;
     padding: 1rem 0;
