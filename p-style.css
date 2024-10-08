@@ -1,0 +1,267 @@
+/* Global Styles */
+:root{
+    --bg-co: #007BFF;
+}
+
+header {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+ 
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background: #0056b3;
+}
+
+/* ABOUT SECIOTN */
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: letf;
+    padding: 0 2rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+#about p span{
+    color: var(--bg-co);
+    font-size: 1.2rem;
+}
+
+/* PROJECT SECTION  */
+.projects-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.project-item {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    border: 1px solid rgba(192, 191, 243, 0.5);
+    border-radius: 5px;
+    padding: 1rem;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1px 15px rgba(108, 83, 199, .5);
+}
+
+.project-item img {
+    height: 8rem;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* SKILL GRID SECTION  */
+.skills-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 0.2rem;
+}
+
+.skill-item { 
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+
+/* ---------- education section ------ */
+
+.skills-container {
+    display: flex;
+    align-content: flex-start;
+    align-self: flex-end;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+/* ---------- career theme-------- */
+
+.theme {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    color: #161515;
+    position: relative;
+}
+
+.education {
+    max-width: fit-content;
+    margin-right: 1rem;
+    border: 1px solid rgb(192, 191, 243);
+    box-shadow: 0 1px 15px rgba(108, 83, 199, .5);
+}
+
+.theme h1 {
+    font-size: 1.5rem;
+    padding: 12px 0;
+    text-transform: uppercase;
+}
+
+.theme .E_block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 2px;
+    background-color:var(--bg-co);
+    border: 2px solid var(--bg-co);
+    height: 100%;
+    border-radius: 5px;
+}
+
+.education .E_block {
+    position: relative;
+    padding: .4rem 2rem;
+    text-align: left;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+.theme .E_block .circledot {
+    background-color: var(--bg-co);
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--btn_color);
+    box-shadow: 1px 1px 5px var(--bg-co);
+}
+
+.theme .E_block h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+
+.theme .E_block .date {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: var(--btn_color);
+    margin: 0;
+}
+
+.theme .E_block .branch {
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+
+/* FORM DESIGN */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    color: #666;
+}
