@@ -191,9 +191,9 @@ footer p {
     margin: 0 auto;
   }
   .container{
-    max-width: 100%;
+    max-width: 90%;
     height: fit-content;
-    margin: 1rem;
+    margin: 1rem 0;
     padding: 1rem 0;
     box-shadow: 0 1px 8px 0 rgba(56, 32, 118, 0.11), 0 1px 26px 0 rgba(28, 31, 90, 0.492);
   }
