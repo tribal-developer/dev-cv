@@ -285,3 +285,6 @@ footer {
     text-decoration: none;
     letter-spacing: 1px;
 }
+footer .container p{
+    font-size: .8rem;
+}
