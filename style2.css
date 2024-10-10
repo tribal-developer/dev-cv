@@ -64,9 +64,9 @@ body {
     }
     nav ul {
         flex-direction: column;
-        display: none !important;
+        display: none;
         position: absolute;
-        top: 0;
+        top: -16rem;
         right: 0;
         gap: 10px;
         width: 80%;
@@ -81,6 +81,7 @@ body {
     }
 
     nav ul .toggle-btn {
+        display: block;
         position: absolute;
         top: 0;
         right: 0;
@@ -88,18 +89,18 @@ body {
         font-size: 1.3rem;
         font-weight: 600;
         padding: 4px 8px;
-        border: 1px solid black;
+        border: 1px solid rgb(168, 139, 246);
         background-color: #007BFF;
         z-index: 1001;
-        display: block;
         border-radius: 5px;
         float: left;
         cursor: pointer;
     }
 
-    nav .show-btn {
+    nav .show-btn{
         display: block !important;
     }
+    
     header{
         height: 55vh;
     }
@@ -152,11 +153,18 @@ nav .container {
     display: flex;
     justify-content: space-between;
     justify-items: flex-end;
-    align-items: center;
+    align-content: space-between;
+    align-items: flex-end;
 }
 
 nav .toggle-btn {
-    color: #232020;
+    color: #232020; 
+    display: none;   
+}
+nav .show-btn img {
+    height: 25px;
+}
+nav .show-btn{
     display: none;
 }
 
@@ -169,15 +177,6 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-nav .show-btn {
-    display: none;
-    cursor: pointer;
-}
-
-nav .show-btn img {
-    height: 25px;
 }
 
 nav a {
